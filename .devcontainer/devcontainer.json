@@ -1,0 +1,39 @@
+{
+  "name": "OfinCar",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/home/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "java.configuration.runtimes": [
+          {
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/msopenjdk-17.0.3",
+            "default": true
+          }
+        ],
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/bin/zsh"
+          }
+        }
+      },
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-java-test",
+        "pivotal.vscode-boot-dev-pack",
+        "vscjava.vscode-lombok"
+      ]
+    }
+  },
+  "forwardPorts": [
+    8081,
+    8082,
+    3306,
+    33060
+  ],
+  "postCreateCommand": "java -version",
+  "remoteUser": "vscode"
+}
