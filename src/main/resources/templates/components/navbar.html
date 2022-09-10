@@ -1,0 +1,31 @@
+<!-- Barra de Navegação -->
+<div th:fragment="navbar">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/navbar.css" />
+  <!-- Bootstrap JS -->
+  <script src="/js/navbar.js" defer></script>
+
+  <header id="header">
+    <a th:href="@{/}">
+      <span id="navbar-brand">OfinCar</span>
+    </a>
+    <nav id="nav">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="">Sobre</a></li>
+        <li><a href="">Características</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Conheça Nosso Site</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>

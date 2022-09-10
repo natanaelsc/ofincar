@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --green: #04AA6D;
+  --yellow: #ffc629;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-300: #dee2e6;
+  --bs-black: #000;
+  --bs-black-rgb: rgb(0, 0, 0);
+  --bs-white: #fff;
+  --bs-dark: #212529;
+  --bs-dark-rgb: rgb(33, 37, 41);
+  --bs-primary: #337ab7;
+  --bs-primary-rgb: rgb(51, 122, 183);
+  --bs-secondary: #6c757d;
+  --bs-secondary-rgb: rgb(108, 117, 125);
+  --bs-success: #5cb85c;
+  --bs-success-rgb: rgb(92, 184, 92);
+  --bs-green: #5cb85c;
+  --bs-green-rgb: rgb(92, 184, 92) --bs-danger: #dc3545;
+  --bs-danger-rgb: rgb(220, 53, 69);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: var(--bs-dark);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--bs-dark);
+}
+
+a:hover {
+  color: var(--bs-dark);
+}
+
+.container {
+  padding: 5%;
+}
+
+.table tbody {
+  font-size: 0.9rem;
+}
+
+/************ BORDA DA TABELA ***********/
+.table>:not(:last-child)>:last-child>* {
+  border-bottom-color: var(--bs-gray-300);
+}
+
+.btn {
+  font-size: .9rem;
+}
+
+.btn-green {
+  color: var(--bs-white);
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 0.25rem;
+}
+
+.btn-green:hover {
+  color: var(--green);
+  background-color: var(--bs-white);
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+}
+
+.btn-primary:hover {
+  color: var(--bs-primary);
+  background-color: var(--bs-white);
+  border: 1px solid var(--bs-primary);
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border: 1px solid var(--bs-secondary);
+}
+
+.btn-secondary:hover {
+  color: var(--bs-secondary);
+  background-color: var(--bs-white);
+  border: 1px solid var(--bs-secondary);
+}
+
+.btn-success {
+  background-color: var(--bs-success);
+  border: 1px solid var(--bs-success);
+}
+
+.btn-success:hover {
+  color: var(--bs-success);
+  background-color: var(--bs-white);
+  border: 1px solid var(--bs-success);
+}
+
+.btn-danger:hover {
+  color: var(--bs-danger);
+  background-color: var(--bs-white);
+}
+
+#brand {
+  font-size: 3.5rem;
+  font-style: italic;
+  color: var(--yellow);
+}
+
+/**** AREA DE ACESSO ****/
+#access {
+  text-align: center;
+}
+
+#access p {
+  font-style: italic;
+  padding: 20px 0 30px;
+}
+
+#access a {
+  padding: 10px 30px;
+}
+
+/******** NAVEGAÇÃO ********/
+#navigation {
+  margin-top: 40px;
+}
+
+#navigation a {
+  color: var(--bs-dark);
+}
+
+#navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+}
+
+/******** CONTEÚDO ********/
+#myTabContent ul {
+  padding: 10px 15px;
+  justify-content: space-between;
+}
