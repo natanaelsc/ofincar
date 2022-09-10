@@ -14,4 +14,9 @@ public class HomeController {
         return new ModelAndView("index");
     }
 
+    @GetMapping("/entrar")
+    ModelAndView signin() {
+        return new ModelAndView("signin");
+    }
+
 }

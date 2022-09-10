@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrar</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Area de Acesso -->
+    <div id="login" class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="mb-5">
+            <a th:href="@{/}"><span id="brand">OfinCar</span></a>
+          </div>
+          <form th:action="@{/}">
+            <div>
+              <h2>Bem vindo!</h2>
+              <p>Entre com seus dados de acesso.</p>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingEmail"
+                aria-describedby="emailHelp"
+                placeholder="Email"
+              />
+              <!-- required -->
+              <label for="floatingEmail">Email</label>
+              <span id="emailHelp" class="form-text"
+                >Nunca compartilharemos seu e-mail com ninguém.</span
+              >
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Senha"
+              />
+              <!-- required -->
+              <label for="floatingPassword">Senha</label>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="inputCheck" />
+              <!-- checked -->
+              <label for="inputCheck" class="form-ckeck-label">Lembre me</label>
+            </div>
+            <button type="submit" class="btn btn-green col-12">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
